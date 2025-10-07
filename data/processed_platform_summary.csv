@@ -1,0 +1,4 @@
+platform,total_products,avg_price,median_price,min_price,max_price,avg_price_per_100g,median_price_per_100g
+Amazon Fresh,14,137.93,89.5,10.0,378.0,86.21,72.0
+JioMart,27,202.63,179.0,19.0,499.0,62.02,52.85
+Zepto,29,55.48,55.0,10.0,108.0,19.92,19.0

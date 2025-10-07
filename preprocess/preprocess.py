@@ -218,23 +218,23 @@ class DataPreprocessor:
     def export_for_dashboard(self, output_prefix: str='processed'):
         """Export all processed data to CSV files"""
         if self.processed_df is not None:
-            self.processed_df.to_csv(f'{output_prefix}_products.csv', index=False)
+            self.processed_df.to_csv(f'data/{output_prefix}_products.csv', index=False)
             print(f"✓ Exported: {output_prefix}_products.csv")
             
         if self.matched_products is not None and len(self.matched_products) > 0:
-            self.matched_products.to_csv(f'{output_prefix}_matched.csv', index=False)
+            self.matched_products.to_csv(f'data/{output_prefix}_matched.csv', index=False)
             print(f"✓ Exported: {output_prefix}_matched.csv")
             
         if self.price_comparison is not None and len(self.price_comparison) > 0:
-            self.price_comparison.to_csv(f'{output_prefix}_price_comparison.csv', index=False)
+            self.price_comparison.to_csv(f'data/{output_prefix}_price_comparison.csv', index=False)
             print(f"✓ Exported: {output_prefix}_price_comparison.csv")
             
         platform_summary = self.get_platform_summary()
-        platform_summary.to_csv(f'{output_prefix}_platform_summary.csv', index=False)
+        platform_summary.to_csv(f'data/{output_prefix}_platform_summary.csv', index=False)
         print(f"✓ Exported: {output_prefix}_platform_summary.csv")
         
         brand_summary = self.get_brand_summary()
-        brand_summary.to_csv(f'{output_prefix}_brand_summary.csv', index=False)
+        brand_summary.to_csv(f'data/{output_prefix}_brand_summary.csv', index=False)
         print(f"✓ Exported: {output_prefix}_brand_summary.csv")
         
         print("\n✓ All files exported successfully!")
