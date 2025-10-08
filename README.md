@@ -119,14 +119,14 @@ python scraper/scraper.py
 python preprocess/preprocess.py
 
 # 3. Launch dashboard
-streamlit run dashboard.py
+streamlit run ui/dashboard.py
 ```
 
 ### Method 2: Use Dashboard Controls
 
 1. Launch the dashboard:
 ```bash
-streamlit run dashboard.py
+streamlit run ui/dashboard.py
 ```
 
 2. Use the sidebar buttons:
